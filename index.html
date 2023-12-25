@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Получение прогноза погоды</title>
+</head>
+<style>
+    * {
+        font-size: 32px;
+    }
+
+    span {
+        color: rgb(95, 157, 250);
+        font-size: 32px;
+    }
+    body{
+        background-color: rgb(59, 59, 59); 
+        color: white;
+    }
+    img{
+        margin-top: 10px;
+        background-color: rgb(13, 117, 165);
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <h1>Прогноз погоды - <span id="cityName"> </span></h1>
+    <input type="text" id="cityInput" placeholder="Введите название города">
+    <button onclick="getWeather()">Получить погоду</button>
+    <div id="weather"></div>
+    <img id="img" />
+
+    <div id="additionalInfo">
+        <div id="temperature"></div>
+        <div id="description"></div>
+        <div id="country"></div>
+        <div id="humidity"></div>
+        <div id="wind"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
